@@ -12,8 +12,13 @@
         company-show-numbers t              ; 显示编号（然后可以用 M-数字 快速选定某一项）
         company-idle-delay .2               ; 延时多少秒后弹出
         company-minimum-prefix-length 1     ; 至少几个字符后开始补全
-        ))
+	))
 
+;; 显示图标
+(use-package company-box
+  :ensure t
+  :if window-system
+  :hook (company-mode . company-box-mode))
 
 ;; 显示当前按键绑定的提示信息
 (use-package which-key
@@ -21,6 +26,13 @@
   :config
   (which-key-mode)
   (which-key-setup-side-window-right-bottom))
+
+;; 错误 / 警告提示引擎
+(use-package flycheck
+  :init ;; 在 (require) 之前需要执行的
+  (setq flycheck-emacs-lisp-load-path 'inherit)
+  :config
+  (global-flycheck-mode))
 
 
 (provide 'init-basic)

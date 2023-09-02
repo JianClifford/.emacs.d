@@ -42,8 +42,8 @@
 "xelatex -shell-escape -interaction nonstopmode -output-directory %o %f"))
 
 ;; 自动编号大纲
-;; (if (version<= "9.3" (org-version))
-;; (add-hook 'org-mode-hook 'org-num-mode))
+;;(if (version<= "9.3" (org-version))
+;;(add-hook 'org-mode-hook 'org-num-mode))
 
 ;; 在完成任务时记录时间。
 (setq org-log-into-drawer t

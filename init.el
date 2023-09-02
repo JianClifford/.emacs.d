@@ -8,6 +8,8 @@
 (require 'init-org)
 (require 'init-ivy)
 (require 'init-basic)
+(require 'init-lsp)
+(require 'init-yasnippet)
 
 
 
