@@ -58,6 +58,19 @@ org-log-refile 'time)
 (use-package org-modern
   :hook ((org-mode . org-modern-mode)))
 
+;; 自动折行
+(add-hook 'org-mode-hook (lambda () (setq truncate-lines nil)))
+
+;; 自动表格对齐
+(if (not (display-graphic-p))
+  (progn
+    ;; 在终端环境下加载的配置
+    (message "Runing in terminal mode"))
+    ;; 图形界面下加载valign
+    (use-package valign
+    	:hook ((org-mode . valign-mode))))
+
+
 
 (provide 'init-org)
 ;; init-org.el ends here

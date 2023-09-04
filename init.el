@@ -10,6 +10,7 @@
 (require 'init-basic)
 (require 'init-lsp)
 (require 'init-yasnippet)
+(require 'init-autoinsert)
 
 
 

@@ -51,5 +51,9 @@
 (setq locale-coding-system 'utf-8)
 (prefer-coding-system 'utf-8)
 
+;; 去除备份文件
+(setq make-backup-files nil)
+
+
 (provide 'init-basic)
 ;; init-basic.el ends here
