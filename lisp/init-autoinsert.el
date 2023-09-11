@@ -37,6 +37,7 @@
 	 "#+AUTHOR:Jian\n"
 	 "#+DATE:" (format-time-string "%Y-%m-%d %T (%Z)" (current-time)) "\n"
 	 "#+EMAIL:jian.linlong@foxmail.com\n"
+	 "#+STARTUP:indent\n"
 	 )
         ((sh-mode . "Shell script") nil
          "#!/bin/bash\n"

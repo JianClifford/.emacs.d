@@ -11,7 +11,7 @@
 (require 'init-lsp)
 (require 'init-yasnippet)
 (require 'init-autoinsert)
-
+(require 'init-evil)
 
 
 ;; 手动安装插件的目录
