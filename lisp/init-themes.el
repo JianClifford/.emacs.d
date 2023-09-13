@@ -8,7 +8,7 @@
 (if (not (display-graphic-p))
     (progn
       ;; 在终端环境下加载的配置
-      (set-frame-font "Source Code Pro-12")
+      (set-frame-font "Source Code Pro-17")
       )
   ;; 在图形界面下加载的配置
   (set-frame-font "Source Code Pro-15")
