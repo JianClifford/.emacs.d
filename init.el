@@ -12,7 +12,7 @@
 (require 'init-yasnippet)
 (require 'init-autoinsert)
 (require 'init-evil)
-
+(require 'init-rim)
 
 ;; 手动安装插件的目录
 (add-to-list 'load-path "~/.emacs.d/site-lisp")
